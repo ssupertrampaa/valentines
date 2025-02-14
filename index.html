@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cariño</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1533294455009-a77b7557d2d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Georgia', serif;
+            color: #2E8B57; /* Color verde forestal para el texto */
+        }
+
+        .carta {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center;
+            display: none; /* Oculta la carta inicialmente */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #228B22; /* Verde forestal más oscuro */
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .firma {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #006400; /* Verde forestal oscuro */
+        }
+
+        .boton {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #228B22; /* Verde forestal */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: #006400; /* Verde forestal más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <button class="boton" onclick="mostrarCarta()">
+        <img src="https://img.icons8.com/ios/50/000000/fox.png" alt="Fox Icon" style="width: 60px; height: 60px; border: none; background: transparent;">
+    </button>
+
+    <div class="carta" id="carta">
+        <h1>Happy Valentine's Day</h1>
+        <p style="font-style: italic; line-height: 1.6; font-size: 1.2rem; color: rgba(52, 73, 94, 0.8); margin-bottom: 20px;">
+            <strong>Red Dress</strong><br>
+            by Supertrampa
+        </p>
+        
+        <p style="font-size: 1.2rem; line-height: 1.6; color: rgba(52, 73, 94, 0.8);">
+            Roses are red<br>
+            Violets are blue<br>s
+            That red dress looks great<br>
+            But your butt steals the view
+        </p>
+        <p>
+           I love you to the moon and back
+        </p>
+        <p class="firma">Con amor,<br>Fran</p>
+    </div>
+
+    <script>
+        function mostrarCarta() {
+            // Oculta el botón
+            document.querySelector('.boton').style.display = 'none';
+            // Muestra la carta
+            document.getElementById('carta').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
